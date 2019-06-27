@@ -1,10 +1,10 @@
-```
+
 
 ## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer| |
+|id|integer|-|
 |name|string| null: false,index: ture|
 
 ### Association
@@ -21,7 +21,7 @@
 |------|----|-------|
 |user_id|integer| foreign_key: true|
 |group_id|integer| foreign_key: true|
-|image|text| |
+|image|text|-|
 |body|text| null:false|
 
 
@@ -35,7 +35,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer| |
+|id|integer|-|
 |name|string|null: false, foreign_key: true|
 
 ### Association
@@ -56,4 +56,3 @@
 - belongs_to :group
 - belongs_to :user
 
-```
