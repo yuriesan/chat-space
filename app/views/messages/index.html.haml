@@ -1,20 +1,6 @@
 .wrapper 
   .chat-side 
-    .side-header 
-      .side-header__box 
-        %p.side-header__box__user-name 
-          yuriesan 
-        %ul.side-header__box__menu 
-          %li.side-header__box__menu-edit 
-            %i.fa.fa-edit 
-          %li.side-header__box__menu-cog 
-            %i.fa.fa-cog 
-    .groups 
-      .group 
-        %p.group__group-name 
-          アイウエオ 
-        %p.group__latest-message 
-          ヤッホー 
+    =render "chat-side"
   .chat-main 
     .main-header 
       .main-header__left__box 
@@ -41,8 +27,6 @@
           aiueo 
         %label 
           %i#image_icon.fa.fa-image 
-          %input.input__box__image__file{type: "file"}/ 
-        
-          
+          %input.input__box__image__file{type: "file"}/
         .submit-btn 
           Send 

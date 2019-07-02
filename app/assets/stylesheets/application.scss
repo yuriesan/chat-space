@@ -1,6 +1,14 @@
 @import './reset.scss'; 
 @import './font-awesome'; 
-@import './messages.scss'; 
+@import './messages.scss';
+@import './user';
+@import './config/colors.scss';
+@import './flash.scss';
+@import './group';
+@import './chat-main.scss';
+@import './chat-side.scss';
+
+
 
 *{ 
   box-sizing: border-box; 
