@@ -5,28 +5,23 @@
     .main-header 
       .main-header__left__box 
         %h2.main-header__left-box__current-group 
-          アイウエオ 
+          = @group.name 
         %ul.main-header__left-box__member-list 
           Member :  
-          %li.main-header__left-box__member-list__member 
-            ダイゴ、ショウゴ、ゴロー 
+          %li.main-header__left-box__member-list__member
+            - @members.each do |member|
+              = member.name
       .main-header__edit__box 
         Edit 
-    .messages 
-      .message 
-        .message__upper-info 
-          %p.message__upper-info__talker 
-            ゴロー 
-          %p.message__upper-info__date 
-            2019/6/29/18:00 
-        .message__text 
-          わん！  
+    .messages
+      = render partial: 'message', collection: @messages
+
     .form 
       .new_message 
-        .input-box 
-          aiueo 
-        %label 
-          %i#image_icon.fa.fa-image 
-          %input.input__box__image__file{type: "file"}/
-        .submit-btn 
-          Send 
+        = form_for [@group, @message] do |f|
+          = f.text_field :content, class: 'input-box', placeholder: 'type a message'
+          .image-icon
+            = f.label :image, class: 'image-icon__box' do
+              = fa_icon 'picture-o', class: 'icon'
+              = f.file_field :image, class: 'image-icon__box__file'
+          = f.submit 'Send', class: 'submit-btn'

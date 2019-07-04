@@ -44,18 +44,18 @@
     display: block; 
     box-sizing: border-box; 
     
-    .group{ 
-      margin-bottom: 40px; 
+    .group{  
+     
       &__name{ 
         font-size: 15px;
         margin-bottom: 5px;
         color:white;
-       text-decoration: none; 
+       
       } 
       &__message{
         font-size: 11px; 
         color: white;
-        text-decoration: none;
+        margin-bottom: 40px;
       } 
     } 
   } 
