@@ -1,3 +1,7 @@
+a:-webkit-any-link{
+  text-decoration: none;
+}
+
 .chat-main{ 
   height: 100vh; 
   width:calc(100vw - 300px); 
@@ -29,7 +33,7 @@
         } 
       } 
     } 
-    &__edit__box{ 
+    &__edit{ 
       color: #38aef0; 
       height: 40px; 
       line-height: 40px; 
@@ -38,6 +42,10 @@
       border: solid 1px #38aef0; 
       position: absolute; 
       right: 40px; 
+      &__box{
+        color: #38aef0;
+        text-decoration: none;
+      }
     } 
   } 
 } 

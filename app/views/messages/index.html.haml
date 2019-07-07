@@ -11,8 +11,8 @@
           %li.main-header__left-box__member-list__member
             - @members.each do |member|
               = member.name
-      .main-header__edit__box 
-        Edit 
+      .main-header__edit
+        =link_to "Edit", edit_group_path(@group.id),class: 'main-header__edit__box'
     .messages
       = render partial: 'message', collection: @messages
 
