@@ -79,7 +79,7 @@
     .input-box{ 
       float: left;
       height: 50px;
-      width: calc(100% - 150px);
+      width: calc(100% - 170px);
       border:none;
       padding-left: 10px;
       margin: 0;
@@ -92,7 +92,7 @@
       float: left;
       height: 50px;
       padding-right: 20px; 
-      margin: 0;
+      margin-right: 15px;
 
       &__box {
         font-size: 20px;
