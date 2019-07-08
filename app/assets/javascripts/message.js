@@ -1,10 +1,8 @@
 $(function(){
   function buildHTML(message){
-    if (message.image){
 
-    }else{
-      message.image = ""
-    };
+　message.image == null ? message.image = "" : true ;
+
     var html = `<div class="message">
                   <div class="message__upper-info">
                     <p class="message__upper-info__talker">
@@ -39,9 +37,8 @@ $(function(){
     })
     .done(function(data){
       var html = buildHTML(data);
-      $('.messages').append(html)
-      $('#message_content').val('')
-      $('#message_image').val('')
+      $('.messages').append(html);
+      $('#new_message')[0].reset();
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight });
       $('.submit-btn').attr('disabled', false);
     })
