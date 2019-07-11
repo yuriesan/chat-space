@@ -12,7 +12,7 @@
             - @members.each do |member|
               = member.name
       .main-header__edit__box 
-        Edit 
+        = link_to "Edit",edit_group_path(@group.id), style:"color:#38aef0;"
     .messages
       = render partial: 'message', collection: @messages
 
