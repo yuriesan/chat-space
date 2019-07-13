@@ -3,7 +3,7 @@
     =render "chat-side"
   .chat-main 
     .main-header 
-      .main-header__left__box 
+      .main-header__left__box{"data-group_id": "#{@group.id}"}
         %h2.main-header__left-box__current-group 
           = @group.name 
         %ul.main-header__left-box__member-list 
