@@ -57,7 +57,6 @@ $(function(){
       var group_id = $('.main-header__left__box').data('group_id');
       var url = "/groups/" + group_id + "/api/messages";
 
-
     $.ajax({
       //ルーティングで設定した通りのURLを指定
       url: url,
