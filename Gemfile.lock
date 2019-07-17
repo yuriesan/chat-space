@@ -262,7 +262,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.2)
   devise
-  fog-aws
+  
   font-awesome-rails
   haml-rails
   jbuilder (~> 2.5)
